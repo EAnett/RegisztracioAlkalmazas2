@@ -10,7 +10,7 @@ namespace RegisztracioAlkalmazas2
     {
         string nev;
         string kor;
-        int korr;
+        int szulev;
         string nem;
         string hobby;
 
@@ -18,25 +18,26 @@ namespace RegisztracioAlkalmazas2
         {
             this.Nev = nev;
             this.Kor = kor;
-            this.Korr = korr;
+            this.Szulev = korr;
             this.Nem = nem;
             this.Hobby = hobby;
         }
 
         public string Nev { get => nev; set => nev = value; }
         public string Kor { get => kor; set => kor = value; }
-        public int Korr { get => DateTime.Now.Year - korr; set => korr = value; }
+        public int Korr { get => DateTime.Now.Year - Szulev; set => Szulev = value; }
         public string Nem { get => nem; set => nem = value; }
         public string Hobby { get => hobby; set => hobby = value; }
+        public int Szulev { get => szulev; set => szulev = value; }
 
         public override string ToString()
         {
-            return string.Format("{0} ", hobby);
+            return string.Format("{0} ({1}) ", hobby, Korr);
         }
 
         public string Sorba()
         {
-            return string.Format($"{nev};{kor};{nem};{hobby}");
+            return string.Format($"{nev};{kor}; {szulev};{nem};{hobby}");
         }
 
         public Regisztracio(string sor)
@@ -44,7 +45,7 @@ namespace RegisztracioAlkalmazas2
             string[] s = sor.Split(';');
             nev = s[0];
             kor = s[1];
-            korr = int.Parse(s[2]);
+            szulev = int.Parse(s[2]);
             nem = s[3];
             hobby = s[4];
         }

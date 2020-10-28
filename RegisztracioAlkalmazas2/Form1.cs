@@ -29,7 +29,7 @@ namespace RegisztracioAlkalmazas2
             }
             string nev=textBox_Nev.Text.Trim();
             string kor=textBox_Kor.Text;
-            int korr=(int)numericUpDown_Kor.Value;
+            int szulev=(int)numericUpDown_Kor.Value;
             string nem;
             if (radioButton_No.Checked)
             {
@@ -40,8 +40,8 @@ namespace RegisztracioAlkalmazas2
                 nem = "Ferfi";
             }
             string hobby=textBox_Hobby.Text.Trim();
-            Regisztracio regisztracio = new Regisztracio(nev, kor, korr, nem, hobby);
-            listBox_Hobby.Items.Add(regisztracio);
+            Regisztracio Regisztracio = new Regisztracio(nev, kor, szulev, nem, hobby);
+            listBox_Hobby.Items.Add(Regisztracio);
             textBox_Hobby.Text = "";
             numericUpDown_Kor.Value = 1990;
             listBox_Hobby.SelectedIndex = -1;
@@ -82,14 +82,13 @@ namespace RegisztracioAlkalmazas2
 
             if (saveFileDialog1.ShowDialog()==DialogResult.OK)
             {
-                string fajl = saveFileDialog1.FileName;
-                using(StreamWriter sw = new StreamWriter(fajl))
+                string file = saveFileDialog1.FileName;
+                using (StreamWriter sw = new StreamWriter(file))
                 {
                     foreach (Regisztracio item in listBox_Hobby.Items)
                     {
                         sw.WriteLine(item.Sorba());
                     }
-                    sw.Close();
                 }
             }
             else

@@ -52,36 +52,44 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(12, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 17);
+            this.label1.Size = new System.Drawing.Size(49, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nev:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 17);
+            this.label2.Size = new System.Drawing.Size(46, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kor:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(12, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 17);
+            this.label3.Size = new System.Drawing.Size(52, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nem:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(3, 269);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 17);
+            this.label4.Size = new System.Drawing.Size(94, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "Új Hobby:";
             // 
@@ -91,6 +99,7 @@
             this.textBox_Nev.Name = "textBox_Nev";
             this.textBox_Nev.Size = new System.Drawing.Size(232, 22);
             this.textBox_Nev.TabIndex = 4;
+            this.textBox_Nev.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_Hobby
             // 
@@ -98,14 +107,16 @@
             this.textBox_Hobby.Name = "textBox_Hobby";
             this.textBox_Hobby.Size = new System.Drawing.Size(232, 22);
             this.textBox_Hobby.TabIndex = 5;
-            this.textBox_Hobby.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_Hobby.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // radioButton_No
             // 
             this.radioButton_No.AutoSize = true;
+            this.radioButton_No.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_No.ForeColor = System.Drawing.Color.Transparent;
             this.radioButton_No.Location = new System.Drawing.Point(140, 180);
             this.radioButton_No.Name = "radioButton_No";
-            this.radioButton_No.Size = new System.Drawing.Size(47, 21);
+            this.radioButton_No.Size = new System.Drawing.Size(55, 28);
             this.radioButton_No.TabIndex = 6;
             this.radioButton_No.TabStop = true;
             this.radioButton_No.Text = "No";
@@ -114,9 +125,11 @@
             // radioButton_Ferfi
             // 
             this.radioButton_Ferfi.AutoSize = true;
+            this.radioButton_Ferfi.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_Ferfi.ForeColor = System.Drawing.Color.Transparent;
             this.radioButton_Ferfi.Location = new System.Drawing.Point(262, 180);
             this.radioButton_Ferfi.Name = "radioButton_Ferfi";
-            this.radioButton_Ferfi.Size = new System.Drawing.Size(57, 21);
+            this.radioButton_Ferfi.Size = new System.Drawing.Size(72, 28);
             this.radioButton_Ferfi.TabIndex = 7;
             this.radioButton_Ferfi.TabStop = true;
             this.radioButton_Ferfi.Text = "Ferfi";
@@ -171,6 +184,7 @@
             this.textBox_Kor.Name = "textBox_Kor";
             this.textBox_Kor.Size = new System.Drawing.Size(232, 22);
             this.textBox_Kor.TabIndex = 12;
+            this.textBox_Kor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown_Kor
             // 
@@ -208,9 +222,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(482, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 17);
+            this.label5.Size = new System.Drawing.Size(140, 24);
             this.label5.TabIndex = 14;
             this.label5.Text = "Kedvenc Hobby:";
             // 
@@ -218,6 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.numericUpDown_Kor);

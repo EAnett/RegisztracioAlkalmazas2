@@ -21,7 +21,7 @@ namespace RegisztracioAlkalmazas2
 
         private void button_Add_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox_Hobby.Text.Trim()) || textBox_Hobby.Text == "Úszás" || textBox_Hobby.Text == "Horgászat" || textBox_Hobby.Text == "Futás")
+            if (string.IsNullOrEmpty(textBox_Hobby.Text.Trim()) || textBox_Hobby.Text == "Úszás" || textBox_Hobby.Text == "úszás" || textBox_Hobby.Text == "Horgászat" || textBox_Hobby.Text == "horgászat" || textBox_Hobby.Text == "Futás" || textBox_Hobby.Text == "futás")
             {
                 MessageBox.Show("Nem töltötte ki a hobby mezőt vagy hibás!", "Hiányos vagy hibás adat!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox_Hobby.Focus();

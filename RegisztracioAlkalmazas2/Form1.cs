@@ -60,12 +60,13 @@ namespace RegisztracioAlkalmazas2
                 MessageBox.Show("Jelölj ki egy kedvenc hobbyt!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            /*if () 
+            if (textBox_Kor.Text==""|| DateTime.Parse(textBox_Kor.Text)>DateTime.Now) 
             {
                 MessageBox.Show("Nem töltötte ki a 'KOR' mezőt vagy hibás!", "Hiányzó adat!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                numericUpDown_Kor.Focus();
+                textBox_Kor.Focus();
                 return;
-            }*/
+
+            }
             if (string.IsNullOrEmpty(textBox_Nev.Text.Trim()))
             {
                 MessageBox.Show("Nem töltötte ki a 'NÉV' mezőt!", "Hiányzó adat!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -78,7 +79,6 @@ namespace RegisztracioAlkalmazas2
                 MessageBox.Show("Nem töltötte ki a 'NEM' mezőt!", "Hiányzó adat!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
 
             if (saveFileDialog1.ShowDialog()==DialogResult.OK)
             {

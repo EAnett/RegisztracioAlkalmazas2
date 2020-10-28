@@ -21,7 +21,7 @@ namespace RegisztracioAlkalmazas2
 
         private void button_Add_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox_Hobby.Text.Trim()) || textBox_Hobby.Text == "Úszás" || textBox_Hobby.Text == "úszás" || textBox_Hobby.Text == "Horgászat" || textBox_Hobby.Text == "horgászat" || textBox_Hobby.Text == "Futás" || textBox_Hobby.Text == "futás")
+            if (string.IsNullOrEmpty(textBox_Hobby.Text.Trim()))
             {
                 MessageBox.Show("Nem töltötte ki a hobby mezőt vagy hibás!", "Hiányos vagy hibás adat!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox_Hobby.Focus();
@@ -34,11 +34,13 @@ namespace RegisztracioAlkalmazas2
             if (radioButton_No.Checked)
             {
                 nem = "No";
+                nem = "Ferfi";
             }
-            else
+            else 
             {
                 nem = "Ferfi";
             }
+            
             string hobby=textBox_Hobby.Text.Trim();
             Regisztracio Regisztracio = new Regisztracio(nev, kor, szulev, nem, hobby);
             listBox_Hobby.Items.Add(Regisztracio);
@@ -55,11 +57,7 @@ namespace RegisztracioAlkalmazas2
 
         private void button_Mentes_Click(object sender, EventArgs e)
         {
-            if (listBox_Hobby.SelectedIndex == -1)
-            {
-                MessageBox.Show("Jelölj ki egy kedvenc hobbyt!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+
             if (textBox_Kor.Text==""|| DateTime.Parse(textBox_Kor.Text)>DateTime.Now) 
             {
                 MessageBox.Show("Nem töltötte ki a 'KOR' mezőt vagy hibás!", "Hiányzó adat!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -77,6 +75,12 @@ namespace RegisztracioAlkalmazas2
             if (!(radioButton_Ferfi.Checked || radioButton_No.Checked))
             {
                 MessageBox.Show("Nem töltötte ki a 'NEM' mezőt!", "Hiányzó adat!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (listBox_Hobby.SelectedIndex == -1)
+            {
+                MessageBox.Show("Jelölj ki egy kedvenc hobbyt!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

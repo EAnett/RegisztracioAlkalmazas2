@@ -23,6 +23,16 @@ namespace RegisztracioAlkalmazas2
             this.Hobby = hobby;
         }
 
+        public Regisztracio(string sor)
+        {
+            string[] s = sor.Split(';');
+            nev = s[0];
+            kor = s[1];
+            szulev = int.Parse(s[2]);
+            nem = s[3];
+            hobby = s[4];
+        }
+
         public string Nev { get => nev; set => nev = value; }
         public string Kor { get => kor; set => kor = value; }
         public int Korr { get => DateTime.Now.Year - Szulev; set => Szulev = value; }
@@ -32,22 +42,12 @@ namespace RegisztracioAlkalmazas2
 
         public override string ToString()
         {
-            return string.Format("{0} ({1}) ", hobby, Korr);
+            return string.Format("{0}", hobby);
         }
 
         public string Sorba()
         {
-            return string.Format($"{nev};{kor}; {szulev};{nem};{hobby}");
-        }
-
-        public Regisztracio(string sor)
-        {
-            string[] s = sor.Split(';');
-            nev = s[0];
-            kor = s[1];
-            szulev = int.Parse(s[2]);
-            nem = s[3];
-            hobby = s[4];
+            return string.Format($"{nev};{kor};{szulev};{nem};{hobby}");
         }
     }
 }

@@ -139,10 +139,6 @@
             // 
             this.listBox_Hobby.FormattingEnabled = true;
             this.listBox_Hobby.ItemHeight = 16;
-            this.listBox_Hobby.Items.AddRange(new object[] {
-            "Úszás",
-            "Horgászat",
-            "Futás"});
             this.listBox_Hobby.Location = new System.Drawing.Point(485, 60);
             this.listBox_Hobby.Name = "listBox_Hobby";
             this.listBox_Hobby.Size = new System.Drawing.Size(238, 228);
